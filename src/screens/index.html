@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Academia On</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>replit</title>
@@ -20,118 +21,51 @@
   </head>
   <body>
     <ion-app>
-      <ion-header>
-        <ion-toolbar color="primaria">
-          <ion-title>Academia On</ion-title>
-          <ion-buttons slot="start"> </ion-buttons>
-          <ion-buttons slot="end">
-            <ion-button href="index.html">
-              <ion-icon name="exit-outline" style="font-size: 32px"></ion-icon>
-            </ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content color="dark" fullscreen="true">
-        <ion-card class="ion-margin">
-          <ion-card-header>
-            <ion-card-title>Evolve</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <img
-              src="https://static.wixstatic.com/media/368834_bfd3bc9c7e104500b58a51ea6b47ffd3~mv2.jpg/v1/fit/w_1000%2Ch_682%2Cal_c%2Cq_80/file.jpg"
-            />
-            Diversidade não é algo a ser aceito, mas sim compartilhado. Nós
-            somos a própria diversidade. Somos diversos nos objetivos,
-            motivações, decisões e aparência. Não há outro como você, e esse é
-            seu principal valor. Faça parte da família Evolve. Aqui, especial é
-            ser você!.
-          </ion-card-content>
-        </ion-card>
-        <ion-card class="ion-margin">
-          <ion-card-header>
-            <ion-card-title>SmartFit</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <img
-              src="https://img.estadao.com.br/resources/jpg/8/6/1635565439468.jpg"
-            />
-            A Smart Fit é a maior rede de academias esportivas fora dos Estados
-            Unidos, líder no segmento na América Latina. Tem mais de 1000
-            unidades no Brasil e em outros 13 países da região, além de mais de
-            3 milhões de clientes matriculados.
-          </ion-card-content>
-        </ion-card>
-        <ion-card class="ion-margin">
-          <ion-card-header>
-            <ion-card-title>BlueFit</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <img
-              src="https://bluefit.com.br/storage/app/uploads/public/5af/331/f8c/thumb_1045_740_650_0_0_crop.png"
-            />
-            Você vai treinar em academias amplas e modernas com equipamentos de
-            última geração, grade de aulas com ginástica, dança e lutas (zumba,
-            jump, funcional, pilates, jiu-jitsu, muay thai, entre outras), que
-            ao longo do ano é renovada com modalidades sazonais, e professores à
-            sua disposição para instruir o seu treino. Temos orgulho em oferecer
-            um serviço premium por um preço acessível, afinal o fácil acesso à
-            atividade física pode mudar a vida de qualquer indivíduo. Entre para
-            o time da BlueFit e descubra a academia que você sempre quis!
-          </ion-card-content>
-        </ion-card>
-        <ion-card class="ion-margin">
-          <ion-card-header>
-            <ion-card-title>Fit One</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <img
-              src="https://dnd1g0gk41u1l.cloudfront.net/image/filename/312848/x_lg_thumb__22_.jpg"
-            />
-            A Fit One se destaca pela moderna estrutura e decoração, com
-            equipamentos modernos de última geração, atendimento de excelência e
-            variedade de aulas coletivas para todas as idades. Nosso maior
-            objetivo é proporcionar para você e sua família um espaço
-            aconchegante com profissionais qualificados para tornar o seu dia
-            muito mais saudável.
-          </ion-card-content>
-        </ion-card>
-        <ion-card class="ion-margin">
-          <ion-card-header>
-            <ion-card-title>BSB FIT</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <img
-              src="https://dnd1g0gk41u1l.cloudfront.net/image/filename/2358719/x_lg__I9xYAEdZd3d8STV_GxJNzlubbOJAfYo.jpg"
-            />
-            A BSB FIT – Saúde e Bem-Estar não é uma academia igual às outras.
-            Ela foi criada para oferecer um atendimento totalmente dedicado e
-            personalizado para seus alunos, com a orientação e supervisão de
-            profissionais com larga experiência no mercado fitness e wellness.
-          </ion-card-content>
-        </ion-card>
+      <ion-content color="dark">
+        <ion-grid style="height: 100%">
+          <ion-row style="height: 100%" class="ion-align-items-center">
+            <ion-col class="ion-text-center">
+              <ion-icon
+                color="primaria"
+                name="barbell"
+                style="font-size: 128px"
+              ></ion-icon>
+              <h2>Academia On</h2>
+              <ion-item color="dark" class="ion-margin-top">
+                <ion-label position="floating" color="primaria"
+                  >Email</ion-label
+                >
+                <ion-input type="email" placeholder="Seu Email"></ion-input>
+              </ion-item>
+              <ion-item color="dark" class="ion-margin-top">
+                <ion-label position="floating" color="primaria"
+                  >Senha</ion-label
+                >
+                <ion-input type="password" placeholder="Sua Senha"></ion-input>
+              </ion-item>
+              <div color="dark" class="ion-margin-top">
+                <ion-button
+                  mode="md"
+                  color="primaria"
+                  expand="block"
+                  href="lista.html"
+                  >Entrar</ion-button
+                >
+              </div>
+              <ion-item
+                href="cadastro.html"
+                color="dark"
+                class="ion-margin-top"
+              >
+                <ion-label style="text-align: center"
+                  ><a style="color: #ffffff">Criar Nova Conta</a></ion-label
+                >
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-content>
-      <ion-fab horizontal="end" vertical="bottom">
-        <ion-fab-button color="primaria">
-          <ion-icon name="barbell" style="font-size: 32px"></ion-icon>
-        </ion-fab-button>
-        <ion-fab-list side="top">
-          <ion-fab-button
-            href="https://pt.wikipedia.org/wiki/Academia_desportiva"
-            color="primaria"
-          >
-            <ion-icon name="globe"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button href="cadastro.html" color="primaria">
-            <ion-icon name="person-add"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button
-            href="https://www.youtube.com/watch?v=DkwG8Ax-YnY"
-            color="primaria"
-          >
-            <ion-icon name="logo-youtube"></ion-icon>
-          </ion-fab-button>
-        </ion-fab-list>
-      </ion-fab>
     </ion-app>
+    <script src="script.js"></script>
   </body>
 </html>
